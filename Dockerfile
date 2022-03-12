@@ -36,14 +36,13 @@ RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
 RUN sudo apt-get install -y nodejs
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
-RUN pip install requests
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
 
 # -----------
 RUN sudo apt update && sudo apt install wget -y
 RUN sudo apt install python3-pip -y
-
+RUN pip install requests
 RUN sudo apt update 
 RUN sudo apt install qemu-system-x86 -y
 #RUN 
