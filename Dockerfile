@@ -43,6 +43,7 @@ RUN sudo apt-get install -y nodejs
 RUN sudo apt update && sudo apt install wget -y
 RUN sudo apt install python3-pip -y
 RUN pip install requests
+RUN pip install pytz
 RUN sudo apt update 
 RUN sudo apt install qemu-system-x86 -y
 #RUN 
