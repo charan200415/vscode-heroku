@@ -1,4 +1,4 @@
-FROM docker pull ideasofcharan/kali:xrdp
+FROM ideasofcharan/kali:xrdp
 
 RUN ./ngrok authtoken 25fucWxC3CSDqgaijavm6m1Zjtr_6eFf5H7wpMkwdHxaWXDwg
 
